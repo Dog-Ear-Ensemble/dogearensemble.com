@@ -1,0 +1,36 @@
+---
+layout: default
+title: "Privacy"
+description: "What Dog Ear Ensemble and this website send, and to whom. In short: nothing, unless you ask."
+permalink: /privacy/
+---
+
+<article class="prose">
+  <h1>Privacy</h1>
+  <p class="lead">In short: {{ site.title }} keeps your data on your device and sends nothing unless you ask it to.</p>
+
+  <h2>The app</h2>
+  <ul>
+    <li><strong>No account.</strong> There is nothing to sign up for, and we run no server that holds your data.</li>
+    <li><strong>No connection on launch.</strong> Opening the app makes no network connection.</li>
+    <li><strong>No trackers.</strong> No analytics, ads, or crash reporting.</li>
+    <li><strong>Your data stays in files.</strong> Characters, personas, and chats are YAML files in your Documents folder. API keys go in your device's secure storage, not in those files.</li>
+  </ul>
+
+  <h2>When the app connects</h2>
+  <p>Only when you press a button that says where it connects, or turn on a setting worded the same way. Each one goes straight from your device to that service:</p>
+  <table>
+    <thead>
+      <tr><th>Service</th><th>When</th><th>What it receives</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Hugging Face</td><td>You search for or download a model.</td><td>Your search words, the model you pick.</td></tr>
+      <tr><td>Chub</td><td>You search for or download a character.</td><td>Your search words, the character you pick.</td></tr>
+      <tr><td>OpenRouter, or an address you enter</td><td>You chat using an online model.</td><td>The chat, with the character and instructions the model needs to reply, and your API key.</td></tr>
+    </tbody>
+  </table>
+  <p>Those services have their own privacy policies and terms, which apply to what you send them. A model running on your device sends nothing anywhere.</p>
+
+  <h2>This website</h2>
+  <p>No cookies, trackers, analytics, or third-party fonts or scripts. It is hosted on GitHub Pages, and GitHub may keep standard server logs (such as IP addresses) under its own privacy statement.</p>
+</article>

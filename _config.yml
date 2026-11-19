@@ -1,0 +1,38 @@
+title: "Dog Ear Ensemble"
+url: "https://dogearensemble.com"
+baseurl: ""
+locale: "en-US"
+markdown: kramdown
+# github-pages defaults to jekyll-theme-primer when no theme is set. The
+# site supplies its own page chrome (_layouts/, _includes/), so opt out.
+theme: null
+
+# Bundled with the github-pages gem, but it still has to be listed to run.
+# Builds sitemap.xml from the pages that exist, so it can't drift.
+plugins:
+  - jekyll-sitemap
+
+tagline: "Story and roleplay chats that stay on your device."
+description: "Dog Ear Ensemble is a local-first app for story and roleplay chats with AI characters. Your characters and chats are plain files on your device, and the app connects to nothing unless you ask."
+keywords: "roleplay, ai chat, character cards, local llm, local-first, flutter"
+author_name: "Nathaniel Perry"
+
+sponsor_url: "https://github.com/sponsors/servel333"
+
+# Off until the app repo is public; a private repo link is a 404 to visitors.
+source_public: false
+source_url: "https://github.com/Dog-Ear-Ensemble/Dog-Ear-Ensemble"
+
+# Main nav links.
+menu:
+  - name: "Features"
+    url: "/#features"
+  - name: "Privacy"
+    url: "/privacy/"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .bundle/

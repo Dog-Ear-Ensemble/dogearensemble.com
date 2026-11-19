@@ -1,0 +1,84 @@
+---
+layout: default
+title: "Home"
+permalink: /
+---
+
+<section class="hero">
+  <img class="hero-icon" src="{{ "/assets/app-icon.png" | relative_url }}" alt="The Dog Ear Ensemble icon: an open book in a speech bubble" width="160" height="160">
+  <h1>{{ site.title }}</h1>
+  <p class="tagline">{{ site.tagline }}</p>
+  <p class="lead">
+    Write stories and roleplay with AI characters, on a model running on
+    your own device or an online one you choose. Characters, personas, and
+    chats are plain files you own.
+  </p>
+  <p class="badge">Coming soon: Android and Linux first</p>
+</section>
+
+<h2 class="section-heading" id="features">What it does</h2>
+
+<div class="cards">
+  <article class="card">
+    <h3>Characters and personas</h3>
+    <p>Create and edit characters, and the personas you play as.</p>
+    <p>Import character cards (chara_card_v2, as JSON or PNG).</p>
+    <p>Search Chub for characters, when you ask.</p>
+  </article>
+
+  <article class="card">
+    <h3>Chats</h3>
+    <p>Many chats per character, saved as you go.</p>
+    <p>Import JanitorAI chat archives and SillyTavern chats.</p>
+    <p>A trash, so a deleted chat or message isn't gone for good.</p>
+  </article>
+
+  <article class="card">
+    <h3>Models</h3>
+    <p>Run GGUF models on your device, downloaded from Hugging Face.</p>
+    <p>Or use online models through OpenRouter or any OpenAI-compatible address, with your own key.</p>
+    <p>Token counts show what fits in the context window.</p>
+  </article>
+</div>
+
+<h2 class="section-heading">On your terms</h2>
+
+<div class="cards">
+  <article class="card">
+    <h3>Nothing leaves without you</h3>
+    <p>Opening the app makes no network connection at all.</p>
+    <p>It connects only when you press a button that says where it goes, or turn on a setting that does.</p>
+    <p>No account, no sign-up, no ads, no trackers.</p>
+  </article>
+
+  <article class="card">
+    <h3>Your files</h3>
+    <p>Every character, persona, and chat is a plain YAML file in your Documents folder.</p>
+    <p>Back them up, read them, or move them with any tool you like.</p>
+    <p>API keys are kept apart, in your device's secure storage.</p>
+  </article>
+
+  <article class="card">
+    <h3>Free and open source</h3>
+    <p>MIT licensed. No paid features.</p>
+    <p>Built mostly by AI (Claude Code), under {{ site.author_name }}'s direction and review.</p>
+    {% if site.source_public %}<p><a href="{{ site.source_url }}">Read the source on GitHub</a>.</p>{% endif %}
+  </article>
+</div>
+
+<h2 class="section-heading">Before you start</h2>
+
+<div class="notice">
+  <p><strong>For adults (18+).</strong> The character sources and online model providers the app connects to require users to be 18 or older, and so does this app.</p>
+  <p><strong>Experimental.</strong> The app is early, provided as is, and may change or break. Keep backups of anything you care about.</p>
+  <p><strong>AI makes things up.</strong> Replies can be wrong or offensive. Nothing a character says is advice.</p>
+  <p><strong>Online models cost money.</strong> Requests to an online provider are billed to your own key, by that provider.</p>
+</div>
+
+<h2 class="section-heading">Support</h2>
+
+<p class="section-body">
+  {{ site.title }} is free. If you enjoy it, you can leave a tip through
+  <a href="{{ site.sponsor_url }}">GitHub Sponsors</a>. It's optional and
+  buys no extra features.
+</p>
